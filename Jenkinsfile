@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'win10'
-    }
-    
-  }
+  agent none
   stages {
     stage('Build') {
       parallel {
