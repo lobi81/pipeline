@@ -16,10 +16,10 @@ pipeline {
             
           }
         }
-        stage('Build_Linux') {
+        stage('Build_Win7') {
           steps {
-            node(label: 'linux') {
-              echo 'Building on Linux'
+            node(label: 'win7_pic') {
+              echo 'Building on Win7'
             }
             
           }
@@ -36,10 +36,10 @@ pipeline {
             
           }
         }
-        stage('Test_Linux') {
+        stage('Test_Win7') {
           steps {
-            node(label: 'linux') {
-              echo 'Testing on Linux'
+            node(label: 'win7_pic') {
+              echo 'Testing on Win7'
             }
             
           }
