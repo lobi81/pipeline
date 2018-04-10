@@ -16,11 +16,5 @@ pipeline {
         echo 'Trying to test this thing'
       }
     }
-    stage('anystep') {
-      agent any
-      steps {
-        mail(subject: 'Test', body: 'from any slave', to: 'florian.lobmaier@ams.com')
-      }
-    }
   }
 }
